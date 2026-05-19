@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Copa 2026</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#carrossel">Carrossel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#selecoes">Seleções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fontes">Fontes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="text-uppercase fw-semibold mb-2">Atividade de Bootstrap</p>
+                    <h1 class="display-5 fw-bold">Primeiros jogos da Copa do Mundo 2026</h1>
+                    <p class="lead mb-0">
+                        Oito seleções, imagens, carrossel automático, cards, botões e grid responsivo.
+                    </p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="p-4 bg-dark bg-opacity-50 rounded">
+                        <h2 class="h5">Resumo</h2>
+                        <p class="mb-0">
+                            Torneio com 48 seleções, sediado por Canadá, México e Estados Unidos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="carrossel" class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Carrossel automático</h2>
+                <p class="text-secondary mb-0">As imagens passam sozinhas a cada 2 segundos.</p>
+            </div>
+
+            <div id="carrosselSelecoes" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel"
+                data-bs-interval="2000" data-bs-pause="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="México"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="1"
+                        aria-label="Brasil"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="2"
+                        aria-label="Alemanha"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="3"
+                        aria-label="Espanha"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="4"
+                        aria-label="França"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="5"
+                        aria-label="Argentina"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="6"
+                        aria-label="Portugal"></button>
+                    <button type="button" data-bs-target="#carrosselSelecoes" data-bs-slide-to="7"
+                        aria-label="Inglaterra"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/mexico.jpg" class="d-block w-100 carousel-image" alt="Imagem do México">
+                        <div class="carousel-caption">
+                            <h3>México</h3>
+                            <p>México x África do Sul - Estádio Azteca, 11/06, 13h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/brasil.webp" class="d-block w-100 carousel-image" alt="Imagem do Brasil">
+                        <div class="carousel-caption">
+                            <h3>Brasil</h3>
+                            <p>Brasil x Marrocos - Gillette Stadium, 13/06, 18h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/alemanha.jpg" class="d-block w-100 carousel-image" alt="Imagem da Alemanha">
+                        <div class="carousel-caption">
+                            <h3>Alemanha</h3>
+                            <p>Alemanha x Curaçao - NRG Stadium, 14/06, 12h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/Espanha.jpg   " class="d-block w-100 carousel-image" alt="Imagem da Espanha">
+                        <div class="carousel-caption">
+                            <h3>Espanha</h3>
+                            <p>Espanha x Cabo Verde - Mercedes-Benz Stadium, 15/06, 12h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/bandeira-francesa.webp" class="d-block w-100 carousel-image" alt="Imagem da França">
+                        <div class="carousel-caption">
+                            <h3>França</h3>
+                            <p>França x Senegal - MetLife Stadium, 16/06, 15h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/argentina.png" class="d-block w-100 carousel-image" alt="Imagem da Argentina">
+                        <div class="carousel-caption">
+                            <h3>Argentina</h3>
+                            <p>Argentina x Argélia - Arrowhead Stadium, 16/06, 20h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/PORTUGAL.png" class="d-block w-100 carousel-image" alt="Imagem de Portugal">
+                        <div class="carousel-caption">
+                            <h3>Portugal</h3>
+                            <p>Portugal x RD Congo - NRG Stadium, 17/06, 12h local.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/Inglaterra-1111x740.jpg" class="d-block w-100 carousel-image" alt="Imagem da Inglaterra">
+                        <div class="carousel-caption">
+                            <h3>Inglaterra</h3>
+                            <p>Inglaterra x Croácia - AT&amp;T Stadium, 17/06, 15h local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselSelecoes"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselSelecoes"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="selecoes" class="container pb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Galeria de seleções</h2>
+                <p class="text-secondary mb-0">Cards com os primeiros jogos, locais e horários.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/mexico.jpg" class="card-img-top" alt="México">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">Grupo A</span>
+                            <h3 class="h5 card-title">México</h3>
+                            <p class="card-text">Primeiro jogo: México x África do Sul.</p>
+                            <p class="small text-secondary mb-1">Local: Estádio Azteca, Cidade do México.</p>
+                            <p class="small text-secondary">Horário: 13h local | 15h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="0">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/brasil.webp" class="card-img-top" alt="Brasil">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">Grupo C</span>
+                            <h3 class="h5 card-title">Brasil</h3>
+                            <p class="card-text">Primeiro jogo: Brasil x Marrocos.</p>
+                            <p class="small text-secondary mb-1">Local: Gillette Stadium, Foxborough.</p>
+                            <p class="small text-secondary">Horário: 18h local | 19h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="1">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/alemanha.jpg" class="card-img-top" alt="Alemanha">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning mb-2">Grupo E</span>
+                            <h3 class="h5 card-title">Alemanha</h3>
+                            <p class="card-text">Primeiro jogo: Alemanha x Curaçao.</p>
+                            <p class="small text-secondary mb-1">Local: NRG Stadium, Houston.</p>
+                            <p class="small text-secondary">Horário: 12h local | 14h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="2">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/Espanha.jpg" class="card-img-top" alt="Espanha">
+                        <div class="card-body">
+                            <span class="badge text-bg-danger mb-2">Grupo H</span>
+                            <h3 class="h5 card-title">Espanha</h3>
+                            <p class="card-text">Primeiro jogo: Espanha x Cabo Verde.</p>
+                            <p class="small text-secondary mb-1">Local: Mercedes-Benz Stadium, Atlanta.</p>
+                            <p class="small text-secondary">Horário: 12h local | 13h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="3">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/bandeira-francesa.webp" class="card-img-top" alt="França">
+                        <div class="card-body">
+                            <span class="badge text-bg-primary mb-2">Grupo I</span>
+                            <h3 class="h5 card-title">França</h3>
+                            <p class="card-text">Primeiro jogo: França x Senegal.</p>
+                            <p class="small text-secondary mb-1">Local: MetLife Stadium, East Rutherford.</p>
+                            <p class="small text-secondary">Horário: 15h local | 16h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="4">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/argentina.png" class="card-img-top" alt="Argentina">
+                        <div class="card-body">
+                            <span class="badge text-bg-info mb-2">Grupo J</span>
+                            <h3 class="h5 card-title">Argentina</h3>
+                            <p class="card-text">Primeiro jogo: Argentina x Argélia.</p>
+                            <p class="small text-secondary mb-1">Local: Arrowhead Stadium, Kansas City.</p>
+                            <p class="small text-secondary">Horário: 20h local | 22h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="5">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/PORTUGAL.png" class="card-img-top" alt="Portugal">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-2">Grupo K</span>
+                            <h3 class="h5 card-title">Portugal</h3>
+                            <p class="card-text">Primeiro jogo: Portugal x RD Congo.</p>
+                            <p class="small text-secondary mb-1">Local: NRG Stadium, Houston.</p>
+                            <p class="small text-secondary">Horário: 12h local | 14h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="6">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/Inglaterra-1111x740.jpg" class="card-img-top" alt="Inglaterra">
+                        <div class="card-body">
+                            <span class="badge text-bg-danger mb-2">Grupo L</span>
+                            <h3 class="h5 card-title">Inglaterra</h3>
+                            <p class="card-text">Primeiro jogo: Inglaterra x Croácia.</p>
+                            <p class="small text-secondary mb-1">Local: AT&amp;T Stadium, Arlington.</p>
+                            <p class="small text-secondary">Horário: 15h local | 17h Brasília.</p>
+                            <button class="btn btn-primary w-100" type="button" data-bs-target="#carrosselSelecoes"
+                                data-bs-slide-to="7">Ver no carrossel</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="fontes" class="container pb-5">
+            <div class="p-4 bg-white rounded shadow-sm">
+                <h2 class="h4">Fontes consultadas</h2>
+                <p class="mb-2">
+                    Informações de grupos, jogos, locais e horários consultadas em 18/05/2026.
+                </p>
+                <a class="btn btn-outline-primary me-2 mb-2"
+                    href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+                    target="_blank">Tabela FIFA</a>
+                <a class="btn btn-outline-secondary mb-2"
+                    href="https://www.fourfourtwo.com/competition/world-cup-2026-fixtures-and-results"
+                    target="_blank">Tabela FourFourTwo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Atividade de Bootstrap - Copa do Mundo 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
